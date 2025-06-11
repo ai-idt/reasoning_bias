@@ -22,9 +22,9 @@ As LLMs, we employ both Llama-3.3-70B with and without reasoning (R1 distillatio
 We used the [BiasMedQA data](https://www.nature.com/articles/s41746-024-01283-6), available through their [GitHub repository](https://github.com/carlwharris/cog-bias-med-LLMs).
 
 ## Files contained in this repo
-- `example_data_recency_bias.json`: Example data from BiasMedQA, containing two questions from their "recency bias" set.
-- `bias_eval_r1.py`: Script to parse the two examples using together.ai's free API. Requires the `openai` package.
-- `bias_eval_qwen3.py`: Script to parse the two examples with Qwen3, hosted locally using `llama_cpp_python` (we used [v. 0.3.8](https://pypi.org/project/llama-cpp-python/0.3.8/))
+- *example_data_recency_bias.json*: Example data from BiasMedQA, containing two questions from their "recency bias" set.
+- *bias_eval_r1.py*: Script to parse the two examples using together.ai's free API. Requires the `openai` package.
+- *bias_eval_qwen3.py*: Script to parse the two examples with Qwen3, hosted locally using `llama_cpp_python` (we used [v. 0.3.8](https://pypi.org/project/llama-cpp-python/0.3.8/))
 
 ## Citation
 Coming soon.
