@@ -26,5 +26,16 @@ We used the [BiasMedQA data](https://www.nature.com/articles/s41746-024-01283-6)
 - *bias_eval_r1.py*: Script to parse the two examples using together.ai's free API. Requires the `openai` package.
 - *bias_eval_qwen3.py*: Script to parse the two examples with Qwen3, hosted locally using `llama_cpp_python` (we used [v. 0.3.8](https://pypi.org/project/llama-cpp-python/0.3.8/))
 
+
+Su Hwan Kim, Sebastian Ziegelmayer, View ORCID ProfileFelix Busch, Christian J. Mertens, Matthias Keicher, Lisa C. Adams, Keno K. Bressem, Rickmer Braren, Marcus R. Makowski, Jan S. Kirschke, Dennis M. Hedderich, View ORCID ProfileBenedikt Wiestler
+
+
 ## Citation
-Coming soon.
+@article{reasoning_bias,
+	author = {Kim, Su Hwan and Ziegelmayer, Sebastian and Busch, Felix and Mertens, Christian J. and Keicher, Matthias and Adams, Lisa C. and Bressem, Keno K. and Braren, Rickmer and Makowski, Marcus R. and Kirschke, Jan S. and Hedderich, Dennis M. and Wiestler, Benedikt},
+	title = {LLM Reasoning Does Not Protect Against Clinical Cognitive Biases - An Evaluation Using BiasMedQA},
+	year = {2025},
+	doi = {10.1101/2025.06.22.25330078},
+	URL = {https://www.medrxiv.org/content/10.1101/2025.06.22.25330078v1},
+	journal = {medRxiv}
+}
