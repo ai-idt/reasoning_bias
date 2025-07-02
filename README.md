@@ -31,6 +31,7 @@ Su Hwan Kim, Sebastian Ziegelmayer, View ORCID ProfileFelix Busch, Christian J. 
 
 
 ## Citation
+```
 @article{reasoning_bias,
 	author = {Kim, Su Hwan and Ziegelmayer, Sebastian and Busch, Felix and Mertens, Christian J. and Keicher, Matthias and Adams, Lisa C. and Bressem, Keno K. and Braren, Rickmer and Makowski, Marcus R. and Kirschke, Jan S. and Hedderich, Dennis M. and Wiestler, Benedikt},
 	title = {LLM Reasoning Does Not Protect Against Clinical Cognitive Biases - An Evaluation Using BiasMedQA},
@@ -39,3 +40,4 @@ Su Hwan Kim, Sebastian Ziegelmayer, View ORCID ProfileFelix Busch, Christian J. 
 	URL = {https://www.medrxiv.org/content/10.1101/2025.06.22.25330078v1},
 	journal = {medRxiv}
 }
+```
