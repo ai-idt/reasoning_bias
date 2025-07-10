@@ -26,10 +26,6 @@ We used the [BiasMedQA data](https://www.nature.com/articles/s41746-024-01283-6)
 - *bias_eval_r1.py*: Script to parse the two examples using together.ai's free API. Requires the `openai` package.
 - *bias_eval_qwen3.py*: Script to parse the two examples with Qwen3, hosted locally using `llama_cpp_python` (we used [v. 0.3.8](https://pypi.org/project/llama-cpp-python/0.3.8/))
 
-
-Su Hwan Kim, Sebastian Ziegelmayer, View ORCID ProfileFelix Busch, Christian J. Mertens, Matthias Keicher, Lisa C. Adams, Keno K. Bressem, Rickmer Braren, Marcus R. Makowski, Jan S. Kirschke, Dennis M. Hedderich, View ORCID ProfileBenedikt Wiestler
-
-
 ## Citation
 ```
 @article{reasoning_bias,
