@@ -18,7 +18,7 @@ In Llama-3.3-70B and Gemini-2.5-Flash, reasoning amplified model vulnerability t
 In none of the three LLMs, reasoning was able to consistently reduce vulnerability to bias-inducing prompts, revealing the fragility of the reasoning capabilities purported by the model developers.
 
 ## Models and data used in our study
-As LLMs, we employ both Llama-3.3-70B with and without reasoning (R1 distillation) hosted on [together.ai](https://together.ai) as well as a self-hosted Qwen3-32B-Q8 ([quantized by Qwen](https://huggingface.co/Qwen/Qwen3-32B-GGUF)). Please see our code (section below) for the exact implementation.
+As LLMs, we employ both Llama-3.3-70B with and without reasoning (R1 distillation) hosted on [together.ai](https://together.ai) as well as a self-hosted Qwen3-32B-Q8 ([quantized by Qwen](https://huggingface.co/Qwen/Qwen3-32B-GGUF)). In addition, we evaluated Google Gemini 2.5 Flash through Google's API. Please see our code (section below) for the exact implementation.
 
 We used the [BiasMedQA data](https://www.nature.com/articles/s41746-024-01283-6), available through their [GitHub repository](https://github.com/carlwharris/cog-bias-med-LLMs).
 
