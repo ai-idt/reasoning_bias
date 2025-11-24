@@ -1,20 +1,21 @@
-# LLM Reasoning Does Not Protect Against Clinical Cognitive Biases
+# Exposing the Fragility of LLM Reasoning Through Bias-Inducing Prompts – Evidence from BiasMedQA
 
 **This repository holds the code used by us to investigate whether reasoning can help LLMs mitigate cognitive biases.**
 
 ![Study Overview](overview.png)
 
-*Background.*
-Cognitive biases are a significant source of clinical errors. Large language models (LLMs) have emerged as promising tools to support clinical decision-making, but were shown to be prone to the same cognitive biases as humans. Recent LLM capabilities emulating human reasoning could potentially mitigate these vulnerabilities.
+*Objectives*
+To evaluate the robustness of LLMs with and without reasoning to cognitive biases.
 
-*Methods.*
-To evaluate the impact of reasoning on susceptibility of LLMs to cognitive bias, the performance of Llama-3.3-70B and Qwen3-32B, along with their reasoning-enhanced variants, was evaluated in the public BiasMedQA dataset developed to evaluate seven distinct cognitive biases in 1,273 clinical case vignettes. Each model was tested using a base prompt, a debiasing prompt with the instruction to actively mitigate cognitive bias, and a fewshot prompt with additional sample cases of biased responses. For each model pair, two mixed-effects logistic regression models were fitted to determine the impact of biases and mitigation strategies on performance.
+*Methods and Analysis*
+The performance of Llama-3.3-70B, Qwen3-32B, and Gemini-2.5-Flash along with their reasoning-enhanced variants, was evaluated in the public BiasMedQA dataset developed to evaluate seven established cognitive biases in 1,273 clinical case vignettes. Each model was tested using a base prompt, a debiasing prompt with the instruction to actively mitigate cognitive bias, and a few-shot prompt with additional sample cases of biased responses. Beyond the seven biases from BiasMedQA, Gemini-2.5-Flash was additionally tested using four unpublished bias-inducing prompts to unveil signs of potential data contamination and actively investigate brittleness. For each model pair, two mixed-effects logistic regression models were fitted to determine the impact of biases and mitigation strategies on performance. 
 
-*Results.*
-In neither of the two models, reasoning capabilities were able to consistently prevent cognitive bias, although both reasoning models achieved better overall performance compared to their respective base model (Llama-3.3-70B: OR of 4.0, Qwen3-32B: OR of 3.6). In Llama-3.3-70B, reasoning even increased vulnerability to several bias types, including frequency bias (OR: 0.6, p = 0.006) and recency bias (OR: 0.5, p < 0.001). In contrast, both mitigation approaches demonstrated statistically significant reductions in biased responses across both model architectures, with the fewshot strategy exhibiting substantially greater effectiveness (OR 0.1 vs. 0.6 for Llama-3.3-70B; OR 0.25 vs. 0.6 for Qwen3).
+*Results*
+In all three models, the reasoning-enhanced variant achieved higher rate of correct responses (Llama-3.3-70B: 72.5-82.1% vs. 61.0-73.4%, Qwen3-32B: 71.7-78.7% vs. 55.5-64.1%, Gemini-2.5-Flash: 81.8-88.6% vs. 80.0-83.7%). The performance of Gemini-2.5-Flash dropped considerably when exposing it to four additional unpublished bias-inducing prompts (from 80.0-88.6% to 47.4-86.1%), hinting at potential contamination of its training data and exposing underlying brittleness. 
+In Llama-3.3-70B and Gemini-2.5-Flash, reasoning amplified model vulnerability to several bias-inducing prompts, while reasoning reduced susceptibility of Qwen3-32B to one of the seven biases. The debiasing and few-shot prompting approaches demonstrated statistically significant reductions in biased responses across all three model architectures.
 
-*Conclusions.*
-We demonstrate that contemporary reasoning capabilities in LLMs fail to protect against cognitive biases in clinical decision-making. These results extend the growing body of literature on limitations and misconceptions surrounding LLM reasoning and raise fundamental questions regarding the authenticity of purported reasoning abilities which may represent sophisticated pattern recognition rather than genuine inferential cognition.
+*Conclusion*
+In none of the three LLMs, reasoning was able to consistently reduce vulnerability to bias-inducing prompts, revealing the fragility of the reasoning capabilities purported by the model developers.
 
 ## Models and data used in our study
 As LLMs, we employ both Llama-3.3-70B with and without reasoning (R1 distillation) hosted on [together.ai](https://together.ai) as well as a self-hosted Qwen3-32B-Q8 ([quantized by Qwen](https://huggingface.co/Qwen/Qwen3-32B-GGUF)). Please see our code (section below) for the exact implementation.
