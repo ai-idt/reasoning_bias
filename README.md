@@ -4,17 +4,17 @@
 
 ![Study Overview](overview.png)
 
-*Objectives*
+*Objectives:*  
 To evaluate the robustness of LLMs with and without reasoning to cognitive biases.
 
-*Methods and Analysis*
+*Methods and Analysis:*  
 The performance of Llama-3.3-70B, Qwen3-32B, and Gemini-2.5-Flash along with their reasoning-enhanced variants, was evaluated in the public BiasMedQA dataset developed to evaluate seven established cognitive biases in 1,273 clinical case vignettes. Each model was tested using a base prompt, a debiasing prompt with the instruction to actively mitigate cognitive bias, and a few-shot prompt with additional sample cases of biased responses. Beyond the seven biases from BiasMedQA, Gemini-2.5-Flash was additionally tested using four unpublished bias-inducing prompts to unveil signs of potential data contamination and actively investigate brittleness. For each model pair, two mixed-effects logistic regression models were fitted to determine the impact of biases and mitigation strategies on performance. 
 
-*Results*
+*Results:*  
 In all three models, the reasoning-enhanced variant achieved higher rate of correct responses (Llama-3.3-70B: 72.5-82.1% vs. 61.0-73.4%, Qwen3-32B: 71.7-78.7% vs. 55.5-64.1%, Gemini-2.5-Flash: 81.8-88.6% vs. 80.0-83.7%). The performance of Gemini-2.5-Flash dropped considerably when exposing it to four additional unpublished bias-inducing prompts (from 80.0-88.6% to 47.4-86.1%), hinting at potential contamination of its training data and exposing underlying brittleness. 
 In Llama-3.3-70B and Gemini-2.5-Flash, reasoning amplified model vulnerability to several bias-inducing prompts, while reasoning reduced susceptibility of Qwen3-32B to one of the seven biases. The debiasing and few-shot prompting approaches demonstrated statistically significant reductions in biased responses across all three model architectures.
 
-*Conclusion*
+*Conclusion:*  
 In none of the three LLMs, reasoning was able to consistently reduce vulnerability to bias-inducing prompts, revealing the fragility of the reasoning capabilities purported by the model developers.
 
 ## Models and data used in our study
