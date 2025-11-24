@@ -25,6 +25,7 @@ We used the [BiasMedQA data](https://www.nature.com/articles/s41746-024-01283-6)
 - *example_data_recency_bias.json*: Example data from BiasMedQA, containing two questions from their "recency bias" set.
 - *bias_eval_r1.py*: Script to parse the two examples using together.ai's free API. Requires the `openai` package.
 - *bias_eval_qwen3.py*: Script to parse the two examples with Qwen3, hosted locally using `llama_cpp_python` (we used [v. 0.3.8](https://pypi.org/project/llama-cpp-python/0.3.8/))
+- *create_new_biases.py*: This script creates the four new biases (authority bias, premature closure, automation bias, simplicity bias) we introduced to uncover LLM memorization in Google Gemini 2.5 Flash.
 
 ## Citation
 ```
