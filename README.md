@@ -1,6 +1,6 @@
 # Exposing the Fragility of LLM Reasoning Through Bias-Inducing Prompts – Evidence from BiasMedQA
 
-**This repository holds the code used by us to investigate whether reasoning can help LLMs mitigate cognitive biases.**
+**This repository holds the code used by us to investigate whether reasoning can help LLMs to be more robust.**
 
 ![Study Overview](overview.png)
 
