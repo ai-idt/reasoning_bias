@@ -31,11 +31,15 @@ We used the [BiasMedQA data](https://www.nature.com/articles/s41746-024-01283-6)
 ## Citation
 ```
 @article{reasoning_bias,
+	title = {Exposing the fragility of {LLM} reasoning through bias-inducing prompts: evidence from {BiasMedQA}},
+	volume = {2},
+	shorttitle = {Exposing the fragility of {LLM} reasoning through bias-inducing prompts},
+	url = {https://bmjdigitalhealth.bmj.com/content/2/1/e000189},
+	doi = {10.1136/bmjdhai-2025-000189},
+	number = {1},
+	journal = {BMJ Digital Health \& AI},
 	author = {Kim, Su Hwan and Ziegelmayer, Sebastian and Busch, Felix and Mertens, Christian J. and Keicher, Matthias and Adams, Lisa C. and Bressem, Keno K. and Braren, Rickmer and Makowski, Marcus R. and Kirschke, Jan S. and Hedderich, Dennis M. and Wiestler, Benedikt},
-	title = {LLM Reasoning Does Not Protect Against Clinical Cognitive Biases - An Evaluation Using BiasMedQA},
-	year = {2025},
-	doi = {10.1101/2025.06.22.25330078},
-	URL = {https://www.medrxiv.org/content/10.1101/2025.06.22.25330078v1},
-	journal = {medRxiv}
+	month = feb,
+	year = {2026}
 }
 ```
